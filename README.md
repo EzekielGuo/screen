@@ -9,4 +9,4 @@
 
 项目效果图（图中数据均为模拟数据）
 
-![概念图](https://github.com/EzekielGuo/screen/blob/master/20190112172817.jpg)
+![概念图](https://github.com/EzekielGuo/screen/blob/master/screen.png)
