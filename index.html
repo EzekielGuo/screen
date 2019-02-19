@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <title>网络产品中心数据展示</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/screen.css" />
+</head>
+
+<body>
+<div class="header">
+    <p>网络产品中心数据展示</p>
+</div>
+<div class="wrapper">
+    <div class="content">
+        <div class="col col-l">
+            <div class="xpanel-wrapper xpanel-wrapper-40">
+                <div class="xpanel xpanel-l-t">
+                    <div class='canvas' id="graph_1" style="height: 70%;"></div>
+                    <div class="mod_1">
+                    	<div class="mod_1_1">
+                    		<p>华北地区</p>
+                    		<p>450</p>
+                    	</div>
+                    	<div class="mod_1_2">
+                    		<p>华南地区</p>
+                    		<p>360</p></div>
+                    	<div class="mod_1_3">
+                    		<p>华东地区</p>
+                    		<p>245</p>
+                    	</div>
+                    </div>
+                </div>
+            </div>
+            <div class="xpanel-wrapper xpanel-wrapper-60">
+                <div class="xpanel xpanel-l-b">
+                    <div class="mod_2">
+                        <div class="mod_2_1">
+                            <p>可用ipv6节点:</p>
+                            <p>北京</p>
+                            <p>M6数据中心</p>
+                            <p>M5数据中心</p>
+                            <p>大兴星光影视城数据中心</p>
+                            <p>亦庄博兴数据中心</p>
+                            <p>B28数据中心</p>
+                            <p>广州</p>
+                            <p>佛山机房</p>
+                            <p>亚太机房</p>
+                            <p>上海</p>
+                            <p>纪蕴机房</p>
+                        </div>
+                        <!--<div class="mod_2_2">-->
+                            <!--<p>华南可用ipv6节点数</p>-->
+                            <!--<p>360</p></div>-->
+                        <!--<div class="mod_2_3">-->
+                            <!--<p>华东可用ipv6节点数</p>-->
+                            <!--<p>245</p>-->
+                        <!--</div>-->
+                    </div>
+                    <div class='canvas' id="graph_2" style="width: 100%;"></div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col col-c">
+            <div class="xpanel-wrapper xpanel-wrapper-75">
+                <div class="xpanel no-bg">
+                    <!-- https://echarts.baidu.com/examples/editor.html?c=map-polygon -->
+                    <div class='canvas' id="graph_3" style="height: 85%;"></div>
+                    <div class="mod_3">
+                    	<div class="mod_3_1">
+                    		<p>华北带宽利用率</p>
+                    		<p>104.6%</p>
+                    	</div>
+                    	<div class="mod_3_2">
+                    		<p>华南带宽利用率</p>
+                    		<p>79.9%</p></div>
+                    	<div class="mod_3_3">
+                    		<p>华东带宽利用率</p>
+                    		<p>70%</p>
+                    	</div>
+                    </div>
+                </div>
+            </div>
+            <div class="xpanel-wrapper xpanel-wrapper-25">
+                <div class="xpanel xpanel-c-b">
+                    <!-- <div class='canvas' id="graph_4"></div> -->
+                    <p class="mod_4_p_1">告警及工单统计<p>
+                    <div class="mod_4">
+                    	<div class="mod_4_1">
+                    		<p>故障单 未处理</p>
+                    		<p>0</p>
+                    	</div>
+                    	<div class="mod_4_2">
+                    		<p>故障单 已处理未完成</p>
+                    		<p>3</p></div>
+                    	<div class="mod_4_3">
+                    		<p>故障单 已完成</p>
+                    		<p>23</p>
+                    	</div>
+                    		<p class="mod_4_p_2">
+                    			<i class="alert_status_blue"></i>
+                    			14.17.96.26-设备巡检-ping延时告警
+								0年0天 1小时6分51秒
+								[u'14.17.96.26']
+                    		</p>
+                    		<p class="mod_4_p_3">
+                    			<i class="alert_status_blue"></i>
+                    			Ten-GigabitEthernet1/0/7-Outbound阀值告警
+								0年0天 1小时48分32秒
+								120.132.132.38
+                    		</p>
+                    		<p class="mod_4_p_3">
+                    			<i class="alert_status_blue"></i>
+                    			163.177.152.78-设备巡检-ping延时告警
+								0年1天 16小时47分53秒
+								[u'163.177.152.78']
+                    		</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col col-r">
+            <div class="xpanel-wrapper xpanel-wrapper-25">
+                <div class="xpanel xpanel-r-t">
+                    <!-- <div class="title">故障统计月报</div> -->
+                    <div class='canvas' id="graph_5"></div>
+                </div>
+            </div>
+            <div class="xpanel-wrapper xpanel-wrapper-30">
+                <div class="xpanel xpanel-r-m">
+                    <div class='canvas' id="graph_6"></div>
+                </div>
+            </div>
+            <div class="xpanel-wrapper xpanel-wrapper-45">
+                <div class="xpanel xpanel-r-b">
+                    <div class='canvas' id="graph_7" style="height: 65%;"></div>
+                    <table class="mod_7_table" border="1" cellspacing="0">
+                        <caption>本月DDOS攻击防御汇总</caption>
+                        <thead>
+                            <tr>
+                                <td>区域</td>
+                                <td>封堵(次)</td>
+                                <td>清洗(次)</td>
+                                <td>总计(次)</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>全国</td>
+                                <td>15</td>
+                                <td>10</td>
+                                <td>25</td>
+                            </tr>
+                            <tr>
+                                <td>华北</td>
+                                <td>6</td>
+                                <td>5</td>
+                                <td>11</td>
+                            </tr>
+                            <tr>
+                                <td>华南</td>
+                                <td>5</td>
+                                <td>3</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td>华东</td>
+                                <td>4</td>
+                                <td>2</td>
+                                <td>6</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/echarts.js"></script>
+<script type="text/javascript" src="js/china.js"></script>
+<!-- <script type="text/javascript" src="js/echarts-cus.js"></script> -->
+<script type="text/javascript" src="js/graph_1.js"></script>
+<script type="text/javascript" src="js/graph_2.js"></script>
+<script type="text/javascript" src="js/graph_3.js"></script>
+<script type="text/javascript" src="js/graph_4.js"></script>
+<script type="text/javascript" src="js/graph_5.js"></script>
+<script type="text/javascript" src="js/graph_6.js"></script>
+<script type="text/javascript" src="js/graph_7.js"></script>
+</body>
+</html>
