@@ -3,4 +3,4 @@
 
 设计概念图
 
-![概念图]（）
+![概念图](https://github.com/EzekielGuo/screen/blob/master/20190112172817.jpg)
