@@ -1,7 +1,7 @@
 # screen
-公司前台屏幕数据展示demo
+* 公司前台屏幕数据展示demo
 
-基于开源项目echarts
+* 基于开源项目echarts
 
 初始设计概念图
 
